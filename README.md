@@ -3,14 +3,15 @@ G-quadruplex identification and secondary structure stability prediction tool
 
 G4Boost requires python3.
 
-Prediction models was constructed using the sklearn module. Prebuilt regression and classification models are available through GitHub.\n
+Prediction models was constructed using the sklearn module. Prebuilt regression and classification models are available through GitHub.
+Locate regression and classification models (G4Boost_regressor.json and G4Boost_classifier.json) into the same directory with G4Boost.py
+
 
 
 	required python packages:
-		pandas
-		xgboost
+		pandas==1.4.3
+		xgboost==1.4.2
 
-Program Usage
 
 	Options:
 	--version             show program's version number and exit  
