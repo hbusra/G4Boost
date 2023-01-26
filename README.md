@@ -63,6 +63,7 @@ The outputs include two files
 2) a csv file for the secondary structure predcition scores
 
 	head test_sequence.fa.gff
+	
 	test_seq_1	0	21	test_seq_1_0_21	21	+	GGGCAGAAGGGAGGGCTGGGG
   
 
