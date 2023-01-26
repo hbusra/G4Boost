@@ -44,7 +44,6 @@ Locate regression and classification models (G4Boost_regressor.json and G4Boost_
 Prepare an input file (FASTA):
 
 	head test_sequence.fa
-
 	>test_seq_1
 	GGGCAGAAGGGAGGGCTGGGG
 
@@ -64,11 +63,10 @@ The outputs include two files
 2) a csv file for the secondary structure predcition scores
 
 	head test_sequence.fa.gff
-	
 	test_seq_1	0	21	test_seq_1_0_21	21	+	GGGCAGAAGGGAGGGCTGGGG
   
-  head test_sequence.fa.g4scores.csv
-  
+
+  head test_sequence.fa.g4scores.csv  
   seq	seq_length	g4motif	length	loops	G-quartet	maxlbase	minlbase	G	C	GG	CC	g4_pred	g4_prob	mfe_pred  
   test_seq_1	21	GGGcagaaGGGaGGGctgGGG	21	3	3	5	1	66	9	42	0	1	0.99999976	-13.413148
  
