@@ -32,6 +32,15 @@ cd G4Boost
 pip install -r requirements.txt
 ```
 
+Alternatively
+```
+Click Code → Download ZIP
+Unzip the downloaded archive
+Open a terminal and navigate into the extracted folder
+
+cd G4Boost
+pip install -r requirements.txt
+```
 G4Boost requires python3. 
 Packaging and simplified installation options (pip and conda) are planned for future releases.
 
