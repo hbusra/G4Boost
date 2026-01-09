@@ -24,24 +24,33 @@ As with any computational prediction method, G4Boost outputs are best interprete
 
 --------------------
 ## Installation
-Clone the repository and install the required dependencies:
+G4Boost requires Python 3 and the dependencies listed in requirements.txt.
 
-```bash
+### Clone the repository and obtain the source code
+```
 git clone https://github.com/hbusra/G4Boost.git
 cd G4Boost
+```
+Alternatively, users may download the repository as a ZIP file from GitHub (Click Code → Download ZIP) and extract it locally instead of using git clone.
+
+
+### Create a dedicated environment and install the required dependencies
+
+#### Option 1: Conda (MacOS)
+
+Using conda is the most reliable installation method across platforms and is strongly recommended for macOS users due to OpenMP requirements of XGBoost.
+
+```bash
+conda env create -f environment.yml
+conda activate g4boost_env
+```
+
+#### Option 2: pip (Linux)
+
+```bash
 pip install -r requirements.txt
 ```
 
-Alternatively
-```
-Click Code → Download ZIP
-Unzip the downloaded archive
-Open a terminal and navigate into the extracted folder
-
-cd G4Boost
-pip install -r requirements.txt
-```
-G4Boost requires python3. 
 Packaging and simplified installation options (pip and conda) are planned for future releases.
 
 
@@ -81,8 +90,6 @@ python3 G4Boost.py -f test_sequence.fa --maxloop 7 --minloop 1 --maxG 4 --minG 3
 
 --------------------
 ## Documentation
-G4Boost requires python3.
-
 Prediction models was constructed using the sklearn module. Prebuilt regression and classification models are available through GitHub.
 Locate regression and classification models (G4Boost_regressor.json and G4Boost_classifier.json) into the same directory with G4Boost.py
 
