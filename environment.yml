@@ -1,0 +1,10 @@
+# environment.yaml
+
+name: g4boost_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pandas=1.4.3
+  - xgboost=1.4.2
+  - numpy==1.26
