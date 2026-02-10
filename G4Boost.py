@@ -124,12 +124,13 @@ def topology(reg, seq):
     else: gstem_base=split_seq[-1]
     g=len(gstem_base)
     loops=[len(sp_seq)-g for sp_seq in split_seq]
-    loops=[lbase for lbase in loops if lbase>0]
+    # Keep zero-length loops when minloop = 0
+    loops=[lbase for lbase in loops if lbase>-1]
     maxlbase=max(loops)
     minlbase=min(loops)
     test=gstem_base
-    for sp_seq in split_seq:
-        if len(sp_seq)>g:
+    for sp_seq in split_seq[:-2]:
+        if sp_seq != '':
             test+=sp_seq[g:].lower()
             test+=gstem_base
     return [test, len(test), len(loops)+1, g, maxlbase, minlbase]
